@@ -60,7 +60,7 @@ public class MainActivity extends AppCompatActivity{
                 JSONObject jsonArray = data.getJSONObject("main");
                 String strTemp = jsonArray.getString("temp");
                 String cityStr = data.getString("name");
-                String str = "Ubicación:"+cityStr+"\nTemperatura actual:"+strTemp;
+                String str = "Ubicación: "+cityStr+"\nTemperatura actual: "+strTemp;
                 textView.setText(str);
 
             }catch (JSONException e) {
